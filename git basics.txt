@@ -1,0 +1,12 @@
+git init #to make any directory as a git repository#
+git config --global user.name "your user name"  #configuring username to be used with commit#
+git congig --global user.email "your email id"   #configuring mail id to be used with commit#
+git clone copied url #to obtain a remote repository locally from an existing url#
+now the modifications in this repository will be tracked 
+to practice:
+touch a b c #add files using touch#
+git add file name #add a particular file in to staging area#
+git add . #to add all the files in to the staging area#
+git commit -m "message related to commit"
+
+

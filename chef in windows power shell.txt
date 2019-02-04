@@ -1,0 +1,56 @@
+ls
+   3 chef-repo
+   4 cd chef
+   5 cd ..
+   6 cd ..
+   7 cd chef
+   8 ls
+   9 cd opscode
+  10 ls
+  11 cd Downloads
+  12 cd ..
+  13 cd Downloads
+  14 cd ..
+  15 cd ~
+  16 ls
+  17 cd downloads
+  18 ls
+  19 cd chef
+  20 ls
+  21 unzip .\chef-starter.zip
+  22 cd chef-repo
+  23 ls
+  24 cd cookbooks
+  25 ls
+  26 chef generate cookbook thursday
+  27 cd thursday
+  28 ls
+  29 cd .\recipes\
+  30 ls
+  31 vim .\default.rb
+  32 cd ..
+  33 cd ..
+  34 cd ''
+  35 cd ..
+  36 ls
+  37 cd .\.chef\
+  38 ls
+  39 cd ..
+  40 cd cookbooks
+  41 ls
+  42 cd thursday
+  43 ls
+  44 ls
+  45 vd .\README.md
+  46 cd .\recipes\
+  47 vim .\default.rb
+  48 chef-apply default.rb
+  49 vim hello.txt
+  50 vim stone.rb
+  51 chef-apply stone.rb
+  52 vim stone.txt
+  53 cd ~
+  54 vim .\stone.txt
+
+
+PS C:\Users\user>

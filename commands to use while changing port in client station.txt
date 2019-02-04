@@ -1,0 +1,46 @@
+in work station
+  chef generate cookbook demo
+  277  ls
+  278  cd demo/
+  279  ls a
+  280  ls .a
+  281  chef -v
+  282  mkdir attributes
+  283  ls
+  284  cd attributes/
+  285  ls
+  286  vi defaullt.rb
+  287  cd ..
+  288  cd recipes/
+  289  vi default.rb
+  290  cd ..
+  291  mkdir templates
+  292  cd templates/
+  293  vi index.html.erb
+  294  cd ..
+  295  ls
+  296  cd templates/
+  297  ls
+  298  scp -i /home/ec2-user/vindhya.pem ec2-user@54.172.8.32:/etc/httpd/conf/httpd.conf .
+  299  ls
+  300  mv httpd.conf httpd.conf.erb
+  301  ls
+  302  vi httpd.conf.erb
+  303  knife bootstrap 54.172.8.32 --sudo -x ec2-user -i /home/ec2-user/vindhya.pem -N "node1"
+  304  knife node run_list add node1 "recipe[demo]"
+  305  knife cookbook upload demo
+in client machine
+netstat -natapl | grep httpd
+    2  yum install httpd -y
+    3  netstat -natapl | grep httpd
+    4  service httpd status
+    5  service httpd start
+    6  service httpd status
+    7  netstat -natapl | grep httpd
+    8  vi /etc/httpd/conf/httpd.conf
+    9  chef-client
+   10  service httpd restart
+   11  systemctl restart httpd
+   12  service httpd status
+   13  netstat -natapl | grep httpd
+   14  history
